@@ -3,7 +3,7 @@ A clean and modern registration page for a fashion brand, featuring user registr
 
 
 # Preview
-![Fashion page Preview](./fashionloginpage)
+!(./fashionloginpage)
 
 
 # Fashion Designer
