@@ -1,0 +1,241 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     outline: none;
+     border: none;
+}
+@font-face {
+     font-family: 'Vazirmatn';
+     src: local('Vazirmatn'), 
+     url('../../../font/vazirmatn/Vazirmatn-VariableFont_wght.ttf') format('truetype');
+}
+body{
+     font-family: 'Vazirmatn';
+     font-size: 20px;
+}
+.container{
+     max-width: 750px;
+     width: 85%;
+     height: 720px;
+     background-color: whitesmoke;
+     margin: 0.8% auto 0 auto;
+     border-radius: 0.6rem;
+     position: relative;
+}
+.login-page{
+     padding: 0.6rem 5.5rem 0.5rem 5.5rem;
+     position: relative;
+}
+.align{
+     text-align: center;
+}
+.logo-name{
+     font-family: 'serif';
+}
+.logo-name::after{
+     content: "";
+     position: absolute;
+     left: 296px;
+     border: 3px solid black;
+     width: 33px;
+     align-self: flex-end;
+}
+.small{
+     font-size: 0.67rem;
+     letter-spacing: 8px;
+     font-weight: 350;
+     position: absolute;
+     top: 54px;
+     left: 341px;
+     font-family: 'Verdana';
+}
+.login-page h3{
+     margin-top: 2rem;
+     font-size: clamp(0.7rem,1.3vw,1rem);
+     word-spacing: 4px;
+     letter-spacing: 2px;
+}
+.howto{
+     font-weight: bold;
+     color: gray;
+     font-size: 0.78rem;
+     margin: 0.7rem 0 0 0;
+}
+form{
+     margin-top: 2.5rem;
+     display: flex;
+     flex-direction: column;
+     gap: 1.6rem;
+}
+form ~ div{
+     width: 100%;
+     height: fit-content;
+}
+label[for="email"],
+label[for="pass"]{
+     font-size: 0.73rem;   
+}
+input[type="email"],
+input[type="password"]{
+     width: 100%;
+     height: 38px;
+     padding: 1rem;
+     border-radius: 0.4rem;
+     letter-spacing: 1.8;
+}
+input[type="email"]::placeholder{
+     font-size: 0.6rem;
+     float: left;
+     line-height: 30px;
+}
+input[type="password"]{
+     font-size: x-large;
+     letter-spacing: 5px;
+     color: gray;
+}
+.attention{
+     display: flex;
+     justify-content: space-between;
+     font-size: 0.65rem;
+     color: gray;
+     padding-top: 0.6rem;
+}
+form div:nth-child(3){
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 0.7rem;
+}
+form div:nth-child(3) div{
+     display: flex;
+     gap: 2.5rem;
+}
+.custom-radio input{
+     display: none;
+}
+.custom-radio{
+     user-select: none;
+     display: flex;
+     gap: 0.8rem;
+}
+.checkmark{
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     background-color: #fff;
+     display: inline-block;
+     position: relative;
+}
+.custom-radio input:checked + .checkmark::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(40, 40, 40);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form div:nth-child(4){
+     display: flex;
+     gap: 0.8rem;
+}
+.custom-checkbox input{
+     display: none;
+}
+.custom-checkbox{
+     user-select: none;
+     display: flex;
+     gap: 0.8rem;
+}
+.checkbox2{
+     width: 15px;
+     height: 15px;
+     border-radius: 4px;
+     background-color: #fff;
+     display: inline-block;
+     position: relative;
+}
+.custom-checkbox input:checked + .checkbox2::after{
+    content: "🗸";
+    color: limegreen;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.about-rules{
+     font-size: 0.7rem;
+}
+.weight{
+     font-weight: 300;
+}
+form div:nth-child(5) button{
+     height: 47px;
+     width: 100%;
+     background-color: rgb(40, 40, 40);
+     color: #fff;
+     border-radius: 1.7rem;
+     cursor: pointer;
+     font-size: 0.93rem;
+}
+.divider{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.75rem;
+     position: relative;
+}
+.divider span:nth-child(1){
+     position: absolute;
+     left: 0;
+     height: 1px;
+     width: 43%;
+     background-color: rgba(211, 211, 211, 0.503);
+}
+.divider span:nth-child(3){
+     position: absolute;
+     right: 0;
+     height: 1px;
+     width: 43%;
+     background: rgba(211, 211, 211, 0.503);
+}
+form div:nth-child(7) button{
+     height: 47px;
+     width: 100%;
+     background-color: #fff;
+     color: black;
+     border-radius: 1.7rem;
+     cursor: pointer;
+     font-size: 0.93rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 1rem;
+}
+.google-logo{
+     height: 30px;
+     width: 30px;
+     object-fit: cover;
+     border-radius: 50%;
+}
+form div:nth-child(7) button a{
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+}
+form div:nth-child(8){
+     text-align: center;
+}
+form div:nth-child(8) span{
+     font-size: 0.7rem;
+     color: gray;
+}
+form div:nth-child(8) a{
+     font-size: 0.75rem;
+     text-decoration: none;
+     color: black;
+}

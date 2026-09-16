@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>FashionDesign login</title>
+     <link rel="stylesheet" href="./login-css/login.css">
+</head>
+<body>
+     <section class="container">
+          <div class="login-page">
+               <h1 class="logo-name align" lang="en">Fashion <br>
+                    <span class="small" lang="en">Designer</span>
+               </h1>
+               <h3 class="align">خوش  آمدید  به <cite><span lang="en">Fashion Design</span></cite></h3>
+               <p class="howto align">ابتدا حساب کاربری خود را ایجاد کرده و سپس خرید کنید</p>
+               <form action="" autocomplete="on" target="_blank">
+                    <div>
+                         <label class="weight" for="email">ایمیل</label><br>
+                         <input type="email" id="email" name="gmail" value="" placeholder="Example@example.com">
+                    </div>
+                    <div>
+                         <label class="weight" for="pass">رمز عبور</label><br>
+                         <input type="password" id="pass" name="password">
+                         <div class="attention">
+                              <span class="rule1">باید دارای 8 حرف یا عدد باشد</span>
+                              <span class="rule2"></span>
+                         </div>
+                    </div>
+                    <div class="weight">
+                         <span>نوع حساب خود را انتخاب کنید</span>
+                         <div>
+                              <label class="custom-radio">
+                                   <input type="radio" name="buy-sell" value="seller" checked>
+                                   <span class="checkmark"></span>
+                                   <span class="label-text">فروشنده</span>
+                              </label>
+
+                              <label class="custom-radio">
+                                   <input type="radio" name="buy-sell" value="buyer">
+                                   <span class="checkmark"></span>
+                                   <span class="label-text">خریدار</span>
+                              </label>
+                         </div>
+                    </div>
+                    <div>
+                         <label class="custom-checkbox">
+                              <input type="checkbox" id="rulesCheckbox" name="rulesCheckbox">
+                              <span class="checkbox2"></span>
+                              <span class="about-rules weight">تمامی <a href="#" style=" color: black;">قوانین و مقررات</a> را مطالعه کرده و قبول دارم</span>
+                         </label>
+                    </div>
+                    <div>
+                         <button type="submit" id="submit">ثبت نام</button>
+                    </div>
+                    <div class="divider">
+                         <span class="line"></span>
+                         <span class="text weight">یا ثبت نام با</span>
+                         <span class="line"></span>
+                    </div>
+                    <div>
+                         <button type="submit"><img class="google-logo" src="./imag/google-logo.png" alt=""><a href="https://accounts.google.com/">با حساب کاربری گوگل</a></button>
+                    </div>
+                    <div>
+                         <span class="weight">آیا حساب کاربری دارید؟</span> <a href="#" class="weight">وارد شوید</a>
+                    </div>
+               </form>
+          </div>
+     </section>
+
+
+     <script src="App.js/Login.js"></script>
+</body>
+</html>
